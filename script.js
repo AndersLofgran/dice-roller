@@ -126,64 +126,58 @@ dice.forEach(button => {
 });
     // color hovers
     coin.addEventListener('mouseover', () => {
-            coin.src = "coin_grey.png";
+        coin.src = "./assets/coin_grey.png";
     })
     coin.addEventListener('mouseout', () => {
-        coin.src = "coin.png";
+        coin.src = "./assets/coin.png";
     })
     dice.forEach(button => {
         button.addEventListener('mouseover', () => {
             if (button.dataset.type == "d4") {
-                button.src = "d4_blue.png";
+                button.src = "./assets/d4_blue.png";
             }
             if (button.dataset.type == "d6") {
-                button.src = "d6_teal.png";
+                button.src = "./assets/d6_teal.png";
             }
             if (button.dataset.type == "d8") {
-                button.src = "d8_green.png";
+                button.src = "./assets/d8_green.png";
             }
             if (button.dataset.type == "d10") {
-                button.src = "d10_yellow.png";
+                button.src = "./assets/d10_yellow.png";
             }
             if (button.dataset.type == "d12") {
-                button.src = "d12_orange.png";
+                button.src = "./assets/d12_orange.png";
             }
             if (button.dataset.type == "d20") {
-                button.src = "d20_red.png";
+                button.src = "./assets/d20_red.png";
             }
             if (button.dataset.type == "d100") {
-                button.src = "d100_purple.png";
-            }
-            if (button.dataset.type == "coin") {
-                button.src = "coin_grey.png";
+                button.src = "./assets/d100_purple.png";
             }
         })
     })
     dice.forEach(button => {
         button.addEventListener('mouseout', () => {
             if (button.dataset.type == "d4") {
-                button.src = "d4.png";
+                button.src = "./assets/d4.png";
             }
             if (button.dataset.type == "d6") {
-                button.src = "d6.png";
+                button.src = "./assets/d6.png";
             }
             if (button.dataset.type == "d8") {
-                button.src = "d8.png";
+                button.src = "./assets/d8.png";
             }
             if (button.dataset.type == "d10") {
-                button.src = "d10.png";
+                button.src = "./assets/d10.png";
             }
             if (button.dataset.type == "d12") {
-                button.src = "d12.png";
+                button.src = "./assets/d12.png";
             }
             if (button.dataset.type == "d20") {
-                button.src = "d20.png";
+                button.src = "./assets/d20.png";
             }
             if (button.dataset.type == "d100") {
-                button.src = "d100.png";
-            }
-            if (button.dataset.type == "coin") {
-                button.src = "coin.png";
+                button.src = "./assets/d100.png";
             }
         })
     })
