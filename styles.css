@@ -1,0 +1,129 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black url(https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/1558559745443-KM38DVM6H0AIJWVJNT1H/ke17ZwdGBToddI8pDm48kJe8VwonRcYgr7f_0UVbdhh7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UbHrcextDeErdIU23wx0_6BTOY9zQNi_nItQjMEsHFYhlvkRmRO1_mFZFNCn67QdSw/ghosts_saltmarsh.jpg?format=1500w) no-repeat center center;
+}
+
+    #diceLogBtn {
+        position: relative;
+        top: -204px;
+        border-radius: 3px 0px 0px 3px;
+        padding: 5px 1px 1px 1px;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        background-color: rgba(255, 255, 255, .5);
+    }
+        #diceLogBtn img {
+            height: 12px;
+            width: 12px;
+        }
+    #logContainer {
+        display: none;
+        text-align: center;
+        font-size: 1.05rem;
+        position: relative;
+        height: 420px;
+        width: minmax(150px max-content);
+        border-radius: 0px 0px 0px 3px;
+        padding: 5px;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+        #diceLog {
+            text-align: left;
+            background-color: rgba(0, 0, 0, 0);
+            overflow: scroll;
+            height: 400px;
+        }
+            ::-webkit-scrollbar {
+                width: 5px;
+                height: 0px;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: rgba(0, 0, 0, 0.6);
+                border-radius: 50px;
+                height: 20px;
+            }
+
+.container {
+    position: relative;
+    padding: 10px;    
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: rgba(255, 255, 255, .6);
+    box-shadow: 1px 1px 5px 1px;
+    border-radius: 3px;
+}
+
+    #display {
+        height: 100px;
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        grid-column: 1 / 5;
+        grid-row: 1;
+    }
+    #result {
+        height: 100px;
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        grid-column: 1 / 5;
+        grid-row: 2;
+    }
+
+    .container button {
+        cursor: pointer;
+        font-size: 1rem;
+        outline: none;
+        margin: 2px;
+        border: none;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.75);
+        border-radius: 3px;
+    }
+
+    button:hover {
+        background-color: rgba(0, 0, 0, 0.85);
+    }
+
+    .dice-btns {
+        grid-column: span 3;
+    }
+
+    .dice-row {
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .mod-btns {
+        display: grid;
+        grid-auto-flow: column;
+        grid-column: span 3;
+    }
+
+    .r-r {
+        display: grid;
+        grid-column: 4;
+        grid-row: 3 / 7; 
+    }
+
+    .r-r > * {
+        font-size: 1.5rem;
+    }
+
+    .dice, #coin {
+        height: 70px;
+        cursor: pointer;
+        outline: none;
+    }

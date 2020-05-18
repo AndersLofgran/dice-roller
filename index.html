@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Dice</title>
+</head>
+
+<body>
+    <button id="diceLogBtn"><img src="back.png"></button>
+    <div id="logContainer">- Log -
+        <div id="diceLog">Roll, baby</div>
+    </div>
+
+    <div class="container">
+        <!-- UPPER SECTION-->
+            <div id="display">Choose up to 3 kinds of dice</div>
+            <div id="result"></div>
+
+        <!-- LOWER SECTION-->
+        <div class="dice-btns">
+            <div class="dice-row">
+                <img class="dice" data-type="d4" data-value="4" src="d4.png">
+                <img class="dice" data-type="d6" data-value="6" src="d6.png">
+                <img class="dice" data-type="d8" data-value="8" src="d8.png">
+                <img class="dice" data-type="d10" data-value="10" src="d10.png">
+            </div>
+            <div class="dice-row">
+                <img class="dice" data-type="d12" data-value="12" src="d12.png">
+                <img class="dice" data-type="d20" data-value="20" src="d20.png">
+                <img class="dice" data-type="d100" data-value="100" src="d100.png">
+                <img id="coin" data-type="coin" src="coin.png">
+            </div>
+        </div>
+
+        <div class="mod-btns">
+            <button class="modifier" value="1">+1</button>
+            <button class="modifier" value="5">+5</button>
+            <button class="modifier" value="-1">-1</button>
+            <button class="modifier" value="-5">-5</button>
+        </div>
+
+        <button id="autoHit">Auto hit die</button>
+        <button id="advantage">Advantage</button>
+        <button id="autoRoll">Auto Roll</button>
+        <button id="customBtn1">+</button>
+        <button id="customBtn2">+</button>
+        <button id="customBtn3">+</button>
+        
+        
+        <div class="r-r">
+            <button class="changeBtn" id="reset">Reset</button>
+            <button class="changeBtn" id="roll">Roll</button>
+        </div>
+
+    </div>
+</body>
+</html>
